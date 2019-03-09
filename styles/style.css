@@ -1,0 +1,280 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+html {
+  background-color: ffffff;
+}
+
+/*navigation bar*/
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 800;
+  color: white;
+}
+
+.mylogo {
+  margin-right: 60px;
+  color: white;
+  letter-spacing: 6px;
+  font-size: 21px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mylogo span {
+  border: 2px solid white;
+  padding: 10px;
+}
+
+.mylogo span:hover {
+  border-color: transparent;
+  color: #0cb596;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  list-style: none;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.nav-buttons li a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  box-sizing: content-box;
+}
+
+.nav-buttons li a:after {
+  padding-bottom: 10px;
+  display:block;
+  content: '';
+  border-bottom: solid 2px white;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.nav-buttons li a:hover:after {
+  transform: scaleX(1);
+}
+
+/*typewriter effect*/
+
+.typetext {
+  position: absolute;
+  top: 17%;
+  left: 35%;
+}
+
+.typetext p {
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 15px;
+  color: #545151;
+  letter-spacing: 2px;
+  line-height: 35px;
+  border-right: 2px solid #0cb596;
+  }
+
+.typetext p:nth-child(1) {
+  width: 500px;
+  animation: type 2.5s steps(40, end);
+  animation-fill-mode: forwards;
+}
+
+.typetext p:nth-child(2) {
+  width: 550px;
+  opacity: 0;
+  animation: type 2.5s steps(40, end);
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.typetext p:nth-child(3) {
+  width: 220px;
+  opacity: 0;
+  animation: type 2s steps(40, end);
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.typetext p:nth-child(4) {
+  width: 530px;
+  opacity: 0;
+  animation: type 2.5s steps(40, end);
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
+
+.typetext p:nth-child(5) {
+  width: 630px;
+  opacity: 0;
+  animation: type 2.5s steps(40, end);
+  animation-delay: 9.5s;
+  animation-fill-mode: forwards;
+}
+
+.typetext p:nth-child(6) {
+  width: 178px;
+  opacity: 0;
+  animation: type2 3s steps(20, end), blink .5s step-end infinite alternate;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 2px solid #0cb596;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*background image*/
+#myself-img {
+  width: 100%;
+}
+
+/*columns*/
+.columns {
+  font-family: 'Crimson Text', serif;
+  padding-top: 20px;
+  column-count: 3;
+  column-width: 250px;
+  column-rule: 1px dotted #979799;
+  column-gap: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+#introduction {
+  margin-left: 40px;
+  color: #545151;
+  font-size: 35px;
+  text-align: right;
+  line-height: 60px;}
+
+.columns p {
+  color: #979799;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 35px;
+  margin-top: 0;
+  column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  text-align: justify;
+}
+
+.intextbutton {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-style: solid outset outset solid;
+  border-width: 2px;
+  border-color: #0cb596;
+  box-shadow: 1px 1px 5px #999;
+  color: #979799;
+  cursor: pointer;
+  background-color: white;
+}
+
+.intextbutton:hover {
+  background-color: #f2f2f2;
+  color: #545151;
+  font-weight: bold;
+}
+
+#foodmeme-img {
+  width: 300px;
+  height: 480px;
+  position: absolute;
+  top: 1760px;
+  left: 895px;
+  border: solid 3px white;
+  box-shadow: 1px 1px 5px #999;
+  display: none;
+}
+
+#codememe-img {
+  width: 333px;
+  height: 480px;
+  position: absolute;
+  top: 1760px;
+  left: 460px;
+  border: solid 3px white;
+  box-shadow: 1px 1px 5px #999;
+  display: none;
+}
+
+.closingbutton {
+  padding: 3px 6px 3px 6px;
+  border: 2px solid white;
+  color: #545151;
+  font-weight: bolder;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px #999;
+  cursor: pointer;
+}
+
+.closingbutton:hover {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
+#closingbutton1 {
+  position: absolute;
+  top: 1750px;
+  left: 780px;
+  display: none;
+}
+
+#closingbutton2 {
+  position: absolute;
+  top: 1750px;
+  left: 1181px;
+  display: none;
+}

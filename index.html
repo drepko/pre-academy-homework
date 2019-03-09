@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Danielle's page</title>
+    <link rel="icon" href="images/favicon.png" type="image" sizes="32x32">
+</head>
+
+<body>
+    <nav>
+      <div class = 'mylogo' onclick = 'topAndReload()'>
+        <h5><span>D</span><span>R</span><span>E</span><span>P</span><span>K</span><span>O</span></h5>
+      </div>
+      <ul class = 'nav-buttons'>
+         <li><a href = '#'>Home</a></li>
+         <li><a href = '#introduction' onclick= "navFunction1()">Who I am</a></li>
+         <li><a href = '#about1' onclick= "navFunction2()">Coding</a></li>
+         <li><a href = '#about2' onclick= "navFunction3()">What I like</a></li>
+      </ul>
+    </nav>
+
+   <div>
+    <img id = 'myself-img' src="images/me.jpg" alt="photo of me">
+
+    <div class = 'typetext'>
+      <p>This is the first page I ever made. Welcome.</p>
+      <p>It took me a lot of trial and error. Mostly error.</p>
+      <p>A shitload of error.</p>
+      <p>I didn’t sleep for days, because of a semicolon.</p>
+      <p>But then, that moment when you finally run your script..</p>
+      <p>.. and it works.</p>
+    </div>
+   </div>
+
+  <div class = columns>
+    <p id = 'introduction' >'Hello, my name is </br>Daniëlle Repko,</br> a code-newbie </br>from Amsterdam.'</p>
+    <p id = 'about1' class = 'texttable'>It is about a year ago that I found out about a online coding challenge. As a newcomer to coding, this challenge was the perfect way to figure out if this is something that suits me. The next five days I received coding assignments. For this I had to use Google as a resource to find answers and tutorials. Before I knew it, I was <button id = 'codingbutton' onclick = 'codeMemeFunction()' class = 'intextbutton'>coding</button> until way after bedtime. Now I understood where this nerdy image came from, but it is definitely not boring. I discovered that coding is not just for ‘some special breed of humans’, but I can learn this as well. Now, I have quit my job and decided to be a coder. </p>
+    <p id = 'about2' class = 'texttable'>Besides coding, I love to eat and cook. I never say no to <button id = 'foodbutton' onclick='foodbuttonFunction()' class = 'intextbutton'>food</button>. It is probably in my genes, as I have several family-members suffering from the same habit. Other things I like to do are: going to techno events and traveling. Asia is my favourite continent so far. Looking forward to meet you all in February!</p>
+
+    <img id = 'foodmeme-img' src = 'images/foodmeme.jpg' alt = 'meme about food'>
+
+    <img id = 'codememe-img' src = 'images/codememe.jpg' alt = 'meme about coding'>
+
+    <button id = 'closingbutton1' class = 'closingbutton' onclick ="displayAbout1()">X</button>
+
+    <button id = 'closingbutton2' class = 'closingbutton' onclick ="displayAbout2()">X</button>
+  </div>
+
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
